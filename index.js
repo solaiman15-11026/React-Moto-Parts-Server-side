@@ -26,7 +26,7 @@ function verifyJWT(req, res, next) {
 
 }
 
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.4y4wz.mongodb.net/?retryWrites=true&w=majority`;
+const uri = "mongodb+srv://autouser:rLoGysLjMvg2V5vz@cluster0.4y4wz.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 async function run() {
